@@ -1,11 +1,11 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 import Icon from "react-native-vector-icons/MaterialIcons"
 import { Avatar } from 'react-native-paper';
 
 const App = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
 
       <View style={styles.insideContainer}>
         <Avatar.Image size={150} style={{ alignSelf: "center", borderColor: "#fff", borderWidth: 3 }} source={require('./assets/images/photoSd.jpeg')} />
@@ -39,7 +39,7 @@ const App = () => {
           Swastikdolas123@gmail.com
         </Icon.Button>
       </View>
-    </View>
+    </SafeAreaView>
   )
 }
 
