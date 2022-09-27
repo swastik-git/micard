@@ -1,12 +1,16 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import Icon from "react-native-vector-icons/MaterialIcons"
+import { Avatar } from 'react-native-paper';
 
 const App = () => {
   return (
     <View style={styles.container}>
 
       <View style={styles.insideContainer}>
+        <Avatar.Image size={150} style={{ alignSelf: "center", borderColor: "#fff", borderWidth: 3 }} source={require('./assets/images/photoSd.jpeg')} />
+
+        {/* <Avatar.Icon size={24} icon="folder" /> */}
         <View style={{ alignItems: 'center' }}>
           <Text style={styles.name}>Swastik Dolas</Text>
           <Text style={styles.position}>React-Native Developer</Text>
@@ -18,7 +22,9 @@ const App = () => {
         <Icon.Button
           name="call"
           backgroundColor="#DDD"
-          color="#000"
+          color="#3e7eb0"
+          size={30}
+          onPress={() => alert("This Functionality not avaliable now")}
           iconStyle={{ margin: 10 }}>
           +91 7879996890
         </Icon.Button>
@@ -26,7 +32,9 @@ const App = () => {
         <Icon.Button
           name="email"
           backgroundColor="#DDD"
-          color="#000"
+          color="#3e7eb0"
+          size={30}
+          onPress={() => alert("This Functionality not avaliable now")}
           iconStyle={{ margin: 10 }}>
           Swastikdolas123@gmail.com
         </Icon.Button>
@@ -42,7 +50,7 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#26734d',
+    backgroundColor: '#3e7eb0',
     justifyContent: "center",
   },
   insideContainer: {
